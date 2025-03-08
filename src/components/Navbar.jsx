@@ -59,8 +59,8 @@ const Navbar = ({ activeProp }) => {
 							key={nav.id}
 							className={`${
 								// active === nav.title || activeProp === index
-								activeProp === index ? 'text-[#f7931a]' : 'text-secondary'
-							} hover:text-[#fff] text-[18px] font-medium cursor-pointer uppercase`}
+								activeProp === index ? 'text-gradient' : 'text-secondary'
+							} hover:text-[#fff] font-medium cursor-pointer uppercase`}
 							onClick={() => setActive(nav.title)}
 						>
 							<a href={`#${nav.id}`}>{nav.title}</a>
@@ -108,8 +108,8 @@ const Navbar = ({ activeProp }) => {
 							{navLinks.map((nav, index) => (
 								<li
 									key={nav.id}
-									className={`font-poppins font-medium cursor-pointer text-[16px] hover:text-white uppercase ${
-										activeProp === index ? 'text-[#f7931a]' : 'text-secondary'
+									className={`font-poppins font-medium cursor-pointer hover:text-white uppercase ${
+										activeProp === index ? 'text-gradient' : 'text-secondary'
 									}`}
 									onClick={() => {
 										setActive(nav.title);

@@ -32,7 +32,7 @@ const Accordion = ({ data }) => {
 							layout
 							className="overflow-hidden"
 						>
-							<div className="bg-accent/20 px-4 py-6 md:px-8 md:py-8 space-y-4 overflow-hidden">
+							<div className="bg-gradient-to-b from-brand/50 to-brand3/50 px-4 py-6 md:px-8 md:py-8 space-y-4 overflow-hidden">
 								{item.content.map((item, index) => (
 									<p key={index} className="text-[14px]">
 										{item}

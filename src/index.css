@@ -38,7 +38,7 @@ html {
 }
 
 .button {
-	@apply bg-[#f7931a] rounded-md py-2 px-4 flex items-center gap-2 text-black hover:shadow-lg hover:scale-110 ease-in-out transition duration-1000 uppercase;
+	@apply bg-gradient-to-b from-brand to-brand3 rounded-md py-2 px-4 flex items-center gap-2 text-white hover:shadow-lg hover:scale-110 ease-in-out transition duration-1000 uppercase;
 }
 .button2 {
 	@apply bg-primary border-2 border-brand rounded-md py-2 px-4 flex items-center gap-2 text-brand hover:shadow-lg hover:scale-110 ease-in-out transition duration-1000;
@@ -105,13 +105,13 @@ button {
 	background: var(--accent);
 	background: linear-gradient(
 		90.13deg,
-		var(--brand-3) 1.9%,
-		var(--accent) 97.5%
+		var(--brand) 1.9%,
+		var(--brand-3) 97.5%
 	);
 	background: -webkit-linear-gradient(
 		-90.13deg,
-		var(--brand-3) 1.9%,
-		var(--accent) 97.5%
+		var(--brand) 1.9%,
+		var(--brand-3) 97.5%
 	);
 }
 
