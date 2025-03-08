@@ -10,7 +10,7 @@ const Hero = () => {
 			<div className="flex- pt-[50px]">
 				<div className="flex flex-col gap-5 items-center text-center">
 					<h2 className={`${styles.heroHeadText}`}>
-						HALVING Token: Harness the Momentum of the 2024 Bitcoin Halving Wave
+						Celebrity Meme Coin: Harness the Momentum of the 2025 Crypto Wave
 					</h2>
 					{/* <h1>$HLVG</h1> */}
 					<p className={`${styles.heroSubText}`}>
