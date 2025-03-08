@@ -11,7 +11,7 @@ import { FiCopy } from 'react-icons/fi';
 const TokenomicsCard = ({ index, title, icon, value }) => (
 	<Tilt className={`tokenomics-card ${index === 1 && 'cursor-pointer'}`}>
 		<motion.div
-			variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
+			variants={fadeIn('up', 'spring', index * 0.2, 1)}
 			className="w-full card-gradient p-[1px] rounded-[20px] shadow-card !shadow-accent/[0.15] text-white h-full"
 		>
 			<div
@@ -54,7 +54,7 @@ const TokenomicsCard = ({ index, title, icon, value }) => (
 const TokenomicsStatsCard = ({ index, title, number }) => (
 	<Tilt className={`tokenomics-card`}>
 		<motion.div
-			variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
+			variants={fadeIn('up', 'spring', index * 0.2, 1)}
 			className="w-full card-gradient p-[1px] rounded-[20px] shadow-card !shadow-accent/[0.15] h-full"
 		>
 			<div
@@ -88,8 +88,12 @@ const About = () => {
 			</div>
 
 			<motion.div variants={textVariant()}>
-				<p className={`${styles.sectionSubText} text-center`}>Tokenomics</p>
-				<h2 className={`${styles.sectionHeadText} text-center`}>Get $CELMC</h2>
+				<motion.p className={`${styles.sectionSubText} text-center`}>
+					Tokenomics
+				</motion.p>
+				<motion.h2 className={`${styles.sectionHeadText} text-center`}>
+					Get $CELMC
+				</motion.h2>
 			</motion.div>
 
 			<div className="mt-10 md:mt-20 flex justify-center flex-wrap gap-[1em] lg:gap-[2em]">
