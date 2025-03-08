@@ -39,7 +39,7 @@ const App = () => {
 
 	return (
 		<div className="relative z-0">
-			<div className="">
+			<div className="" ref={section1Ref}>
 				<Navbar activeProp={activeNav} />
 				<Hero />
 			</div>

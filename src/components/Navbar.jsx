@@ -44,7 +44,9 @@ const Navbar = ({ activeProp }) => {
 
 	return (
 		<nav
-			className={`${styles.paddingX} w-full flex items-center py-5 ${
+			className={`${
+				styles.paddingX
+			} w-full flex items-center py-5 absolute top-0 left-0 ${
 				scrolled ? 'bg-transparent' : 'bg-transparent'
 			}`}
 		>
