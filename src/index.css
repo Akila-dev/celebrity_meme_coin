@@ -10,6 +10,8 @@
 	--card: #caacd0;
 	--card-2: #ecebe4;
 	--dark: #1c1c1c;
+	--dark-2: #211c22;
+	--dark-3: #21201e;
 	--light: #fafaff;
 	@apply text-[4.15vw] md:text-[1.8vw] lg:text-[1.2vw];
 }
@@ -83,7 +85,7 @@ button {
 
 /* * COLORS AND BACKGROUNDS */
 .card-bg-glass {
-	@apply bg-brand/20 backdrop-filter backdrop-blur-lg;
+	@apply bg-brand/10 backdrop-filter backdrop-blur-lg;
 }
 
 .text-gradient {
@@ -115,11 +117,11 @@ button {
 
 .dark-gradient-card {
 	background: var(--dark);
-	background: linear-gradient(90.13deg, var(--dark) 1.9%, var(--brand) 97.5%);
+	background: linear-gradient(90.13deg, var(--dark) 1.9%, var(--dark-2) 97.5%);
 	background: -webkit-linear-gradient(
 		-90.13deg,
 		var(--dark) 1.9%,
-		var(--brand) 97.5%
+		var(--dark-2) 97.5%
 	);
 }
 
