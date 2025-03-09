@@ -89,7 +89,7 @@ input,
 
 /* * COLORS AND BACKGROUNDS */
 .card-bg-glass {
-	@apply bg-brand/10 backdrop-filter backdrop-blur-lg;
+	@apply bg-card/10 backdrop-filter backdrop-blur-lg;
 }
 
 .flex-y-center {

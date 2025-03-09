@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { slideIn, textVariant } from '../../utils/motion';
+
 import { VscArrowSwap } from 'react-icons/vsc';
 import { FaWallet } from 'react-icons/fa6';
 
@@ -17,16 +20,25 @@ const MyAccount = () => {
 
 	const onChangeCMC = (e) => {
 		let val = e.target.value;
+		let sol = val / 5;
+		let bonus = val / 10;
 		if (val === '' || /^[0-9\b]+$/.test(val)) {
 			setCMCValue(val);
-			setSOLValue(val * 5);
+			setSOLValue(sol);
+
+			setPurchaseDesc([
+				{ label: 'Receive', value: val || 0 },
+				{ label: 'Bonus', value: bonus },
+				{ label: 'Total Receive', value: Number(val) + Number(bonus) },
+			]);
 		}
 	};
 
 	return (
 		<div className="grid grid-cols-1 lg:grid-cols-3 gap-[1em]">
 			{/* LEFT SIDE */}
-			<div
+			<motion.div
+				variants={slideIn('left', 'tween', 0.2, 1)}
 				className={`card-bg-glass card-padding rounded-[1em] space-y-[1em] col-span-1 lg:col-span-2`}
 			>
 				{/* MY ACCOUNT */}
@@ -71,7 +83,7 @@ const MyAccount = () => {
 							icon={<Logo w="w-[2em]" />}
 						/>
 						<div
-							className="p-[0.7em] h-[2.5em] rounded-[0.3em] bg-brand/20 flex-center 
+							className="p-[0.7em] h-[2.5em] rounded-[0.3em] bg-card/20 flex-center 
 					!hidden md:!flex"
 						>
 							<VscArrowSwap />
@@ -83,10 +95,13 @@ const MyAccount = () => {
 						Buy $CELMC
 					</button>
 				</div>
-			</div>
+			</motion.div>
 
 			{/* RIGHT SIDE */}
-			<div className="card-bg-glass card-padding rounded-[1em] space-y-[1em]">
+			<motion.div
+				variants={slideIn('right', 'tween', 0.2, 1)}
+				className="card-bg-glass card-padding rounded-[1em] space-y-[1em]"
+			>
 				<div className="space-y-[2em]">
 					<div className="flex-y-center flex-col md:flex-row">
 						<p className="text-[1.5em]">Order Summary</p>
@@ -97,13 +112,15 @@ const MyAccount = () => {
 								{/* <div className="w-[2em] h-[0.2em] card-gradient mb-[1em]" /> */}
 								<div className="flex-y-center pb-[1em] border-b border-card/50">
 									<p className="text-[0.8em] font-medium">{label}</p>
-									<p className="text-[0.8em] font-medium">{value}</p>
+									<p className="text-[0.8em] font-medium">
+										{Number(value || 0).toFixed(2)}
+									</p>
 								</div>
 							</div>
 						))}
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
 };
