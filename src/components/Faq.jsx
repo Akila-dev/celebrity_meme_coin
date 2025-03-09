@@ -35,9 +35,10 @@ const Faq = () => {
 					variants={slideIn('right', 'tween', 0.2, 1)}
 					className="lg:flex-1 overflow-visible flex items-center justify-center"
 				>
-					<div className="lg:flex-1 lg:h-[50vw] lg:max-h-[680px] md:h-[550px] h-[300px] overflow-visible !pointer-events-none">
+					<div className="lg:flex-1 lg:h-[50vw] lg:max-h-[680px] md:h-[550px] h-[300px] overflow-visible relative">
 						{/* <EarthCanvas /> */}
 						<CoinCanvas />
+						<div className="absolute top-0 left-0 w-full h-full z-10 bg-brand/0" />
 					</div>
 				</motion.div>
 			</div>
