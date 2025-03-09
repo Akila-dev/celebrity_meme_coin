@@ -6,8 +6,6 @@ import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import { team } from '../constants';
 
-import Logos from './Logos';
-
 const TeamCard = ({ index, name, designation, image }) => (
 	<motion.div
 		variants={fadeIn('', 'spring', index * 0.5, 0.75)}
@@ -48,9 +46,6 @@ const Team = () => {
 				{team.map((teammate, index) => (
 					<TeamCard key={teammate.name} index={index} {...teammate} />
 				))}
-			</div>
-			<div>
-				<Logos />
 			</div>
 		</div>
 	);

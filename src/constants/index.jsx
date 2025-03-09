@@ -2,12 +2,6 @@ import {
 	mobile,
 	backend,
 	web,
-	dexscreener,
-	dextools,
-	coinmarketcap,
-	coingecko,
-	etherscan,
-	git,
 	teammate1,
 	teammate2,
 	teammate3,
@@ -61,7 +55,26 @@ export const contactLinks = [
 	},
 ];
 
-const tokenomics = [
+export const accountData = [
+	{
+		label: 'Ammount Spent ($)',
+		value: '0.0',
+	},
+	{
+		label: 'Ammount Spent ($)',
+		value: '0.0',
+	},
+	{
+		label: 'Ammount Spent ($)',
+		value: '0.0',
+	},
+	{
+		label: 'Ammount Spent ($)',
+		value: '0.0',
+	},
+];
+
+export const tokenomics = [
 	{
 		title: 'Supply',
 		value: '21.000.000',
@@ -79,95 +92,7 @@ const tokenomics = [
 	},
 ];
 
-const LOGOS = [
-	{
-		name: 'Coinmarketcap',
-		icon: coinmarketcap,
-	},
-	{
-		name: 'Coingecko',
-		icon: coingecko,
-	},
-	{
-		name: 'Dexscreener',
-		icon: dexscreener,
-	},
-	{
-		name: 'Dextools',
-		icon: dextools,
-	},
-	{
-		name: 'Etherscan',
-		icon: etherscan,
-	},
-	{
-		name: 'Github',
-		icon: git,
-	},
-];
-
-const roadmap = [
-	{
-		title: 'Phase 1',
-		subheading: 'Launch Sequence',
-		iconBg: '#383E56',
-		date: 'March 2020 - April 2021',
-		points: [
-			' Deploy Contract',
-			'Launch',
-			'Achieve 200 Holders',
-			'Establish Social Networks',
-			'Update Dextools',
-			'Execute Half Token Phase 1',
-		],
-	},
-	{
-		title: 'Phase 2',
-		subheading: 'Growth Phase',
-		iconBg: '#383E56',
-		date: 'Jan 2021 - Feb 2022',
-		points: [
-			' Engage Influencers',
-			'Undergo Contract Audit',
-			'Trend on Twitter',
-			'Attain Listings on Coingecko and CoinMarketCap',
-			'Reach 1000 Holders',
-			'Implement Half Token Phase 2',
-		],
-	},
-	{
-		title: 'Phase 3',
-		subheading: 'Expansion  Phase',
-		iconBg: '#383E56',
-		date: 'Jan 2022 - Jan 2023',
-		points: [
-			'Surpass 2500 Holders',
-			'Achieve 5M Market Cap',
-			'Trend on Dexstools',
-			'Secure CEX Listing',
-			'Conduct  Giveaways',
-			'Trend on Coingecko Trending and CoinMarketCap',
-			'Initiate Half Token Phase 3',
-		],
-	},
-	{
-		title: 'Phase 4',
-		subheading: 'Maturity Phase',
-		iconBg: '#383E56',
-		date: 'Jan 2023 - Present',
-		points: [
-			'Facilitate Buy Contests',
-			'Perform Regular Burns',
-			'Forge Partnerships',
-			'Sustain Marketing Initiatives',
-			'Maintain Community Engagement',
-			'Pursue Further Listings',
-			'Advance Half Token Phase 4',
-		],
-	},
-];
-
-const team = [
+export const team = [
 	{
 		name: 'MickeB',
 		designation: 'Co-Dev',
@@ -185,7 +110,7 @@ const team = [
 	},
 ];
 
-const FAQ = [
+export const FAQ = [
 	{
 		title: 'What is Celebrity Meme Coin?',
 		content: [
@@ -252,5 +177,3 @@ const FAQ = [
 		list: [],
 	},
 ];
-
-export { tokenomics, LOGOS, roadmap, team, FAQ };

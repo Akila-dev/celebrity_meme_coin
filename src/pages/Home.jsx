@@ -4,8 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import {
 	Faq,
 	Contact,
-	Roadmap,
-	Team,
+	Dashboard,
 	Hero,
 	Navbar,
 	Tokenomics,
@@ -43,6 +42,11 @@ const App = () => {
 				<Navbar activeProp={activeNav} />
 				<Hero />
 			</div>
+
+			<div ref={section2Ref}>
+				<Dashboard />
+			</div>
+
 			<div ref={section3Ref}>
 				<Tokenomics />
 			</div>

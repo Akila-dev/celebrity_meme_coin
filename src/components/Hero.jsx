@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
+import { Calculator } from '../components';
 
 import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -25,7 +26,7 @@ const Hero = () => {
 				</motion.div>
 			</div>
 			{/* https://youtu.be/IDJD65SNFuQ?si=YEiVFG4AflmnthF7 */}
-			<div className="w-full flex justify-center md:max-w-[90%]">
+			<div className="w-full flex flex-col items-center gap-[3em] justify-center md:max-w-[90%]">
 				<motion.iframe
 					width="420"
 					height="315"
@@ -33,6 +34,7 @@ const Hero = () => {
 					className="w-full md:h-[80vh] md:max-h-[400px] lg:max-h-[80vh] rounded-[1em]"
 					variants={fadeIn('up', 'spring', 0, 1)}
 				></motion.iframe>
+				{/* <Calculator /> */}
 			</div>
 		</section>
 	);

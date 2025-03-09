@@ -14,14 +14,7 @@ const TokenomicsCard = ({ index, title, icon, value }) => (
 			variants={fadeIn('up', 'spring', index * 0.2, 1)}
 			className="w-full card-gradient p-[1px] rounded-[20px] shadow-card !shadow-accent/[0.15] text-white h-full"
 		>
-			<div
-				options={{
-					max: 45,
-					scale: 1,
-					speed: 450,
-				}}
-				className="dark-gradient-card rounded-[20px] card-padding h-full flex justify-evenly items-center flex-col gap-[1em]"
-			>
+			<div className="dark-gradient-card rounded-[20px] card-padding h-full flex justify-evenly items-center flex-col gap-[1em]">
 				<img
 					src={icon}
 					alt="web-development"
@@ -57,14 +50,7 @@ const TokenomicsStatsCard = ({ index, title, number }) => (
 			variants={fadeIn('up', 'spring', index * 0.2, 1)}
 			className="w-full card-gradient p-[1px] rounded-[20px] shadow-card !shadow-accent/[0.15] h-full"
 		>
-			<div
-				options={{
-					max: 45,
-					scale: 1,
-					speed: 450,
-				}}
-				className="dark-gradient-card rounded-[20px] card-padding h-full flex justify-evenly items-center flex-col gap-[1em]"
-			>
+			<div className="dark-gradient-card rounded-[20px] card-padding h-full flex justify-evenly items-center flex-col gap-[1em]">
 				<h3 className={`${styles.tokenomicsTitle} font-semibold text-center`}>
 					{title}
 				</h3>
@@ -82,7 +68,7 @@ const TokenomicsStatsCard = ({ index, title, number }) => (
 const About = () => {
 	return (
 		<div>
-			<div className="mb-10 md:mb-20 flex justify-center flex-wrap gap-[1em] lg:gap-[2em]">
+			<div className="mb-10 md:mb-20 flex justify-center flex-wrap gap-[1.5em] lg:gap-[2em]">
 				<TokenomicsStatsCard index={1} title="Tax Buy" number={3} />
 				<TokenomicsStatsCard index={2} title="Tax Sell" number={6} />
 			</div>
@@ -96,7 +82,7 @@ const About = () => {
 				</motion.h2>
 			</motion.div>
 
-			<div className="mt-10 md:mt-20 flex justify-center flex-wrap gap-[1em] lg:gap-[2em]">
+			<div className="mt-10 md:mt-20 flex justify-center flex-wrap gap-[1.5em] lg:gap-[2em]">
 				{tokenomics.map((item, index) => (
 					<TokenomicsCard key={item.title} index={index} {...item} />
 				))}

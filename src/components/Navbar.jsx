@@ -6,7 +6,7 @@ import { navLinks } from '../constants';
 import { Logo } from '../components';
 import { menu, close } from '../assets';
 
-import { FaEthereum } from 'react-icons/fa6';
+import { FaWallet } from 'react-icons/fa6';
 
 const Navbar = ({ activeProp }) => {
 	const [active, setActive] = useState('');
@@ -46,7 +46,7 @@ const Navbar = ({ activeProp }) => {
 		<nav
 			className={`${
 				styles.paddingX
-			} w-full flex items-center py-5 absolute top-0 left-0 ${
+			} w-full flex items-center py-5 z-50 absolute top-0 left-0 ${
 				scrolled ? 'bg-transparent' : 'bg-transparent'
 			}`}
 		>
@@ -74,8 +74,8 @@ const Navbar = ({ activeProp }) => {
 						target="_blank"
 						className="button"
 					>
-						<FaEthereum />
-						Connect
+						<FaWallet />
+						Connect Wallet
 					</a>
 				</div>
 
@@ -98,17 +98,18 @@ const Navbar = ({ activeProp }) => {
 						/>
 					)}
 
+					{/* MOBILE POPUP */}
 					<div
 						ref={popupRef}
 						className={`${
 							!toggle ? 'hidden' : 'flex flex-col gap-6'
-						} p-6 card-bg-glass !bg-dark/90 absolute top-20 right-0 mx-4 my-2 min-w-[15em] z-10 rounded-xl shadow-card`}
+						} p-6 card-bg-glass !bg-dark/90 absolute top-20 right-0 mx-4 my-2 min-w-[15em] z-10 rounded-xl shadow-card !shadow-accent/10`}
 					>
 						<ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
 							{navLinks.map((nav, index) => (
 								<li
 									key={nav.id}
-									className={`font-poppins font-medium cursor-pointer hover:text-white uppercase ${
+									className={`font-poppins font-medium cursor-pointer hover:text-white uppercase text-[1.2em] ${
 										activeProp === index ? 'text-gradient' : 'text-secondary'
 									}`}
 									onClick={() => {
@@ -125,8 +126,8 @@ const Navbar = ({ activeProp }) => {
 							target="_blank"
 							className="button"
 						>
-							<FaEthereum />
-							Connect
+							<FaWallet />
+							Connect Wallet
 						</a>
 					</div>
 				</div>

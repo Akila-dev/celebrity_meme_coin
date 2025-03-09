@@ -6,16 +6,11 @@ import github from './github.png';
 import menu from './menu.svg';
 import close from './close.svg';
 
-import coinmarketcap from './Logos/coinmarketcap.png';
-import coingecko from './Logos/coingecko.png';
-import dexscreener from './Logos/dexscreener.png';
-import dextools from './Logos/dextools.png';
-import etherscan from './Logos/etherscan.png';
-import git from './Logos/github.png';
-
 import teammate1 from './team/1.png';
 import teammate2 from './team/2.png';
 import teammate3 from './team/3.png';
+
+import sol from './dummy_img/sol.jpeg';
 
 export {
 	logo,
@@ -25,17 +20,13 @@ export {
 	github,
 	menu,
 	close,
-	dexscreener,
-	dextools,
-	coinmarketcap,
-	coingecko,
-	etherscan,
-	git,
 	teammate1,
 	teammate2,
 	teammate3,
+	sol,
 };
 
 export const images = {
 	logo,
+	sol,
 };
