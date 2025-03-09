@@ -115,15 +115,11 @@ input,
 
 .card-gradient {
 	background: var(--accent);
-	background: linear-gradient(
-		90.13deg,
-		var(--brand) 1.9%,
-		var(--brand-3) 97.5%
-	);
+	background: linear-gradient(90.13deg, var(--brand) 1.9%, var(--card) 97.5%);
 	background: -webkit-linear-gradient(
 		-90.13deg,
 		var(--brand) 1.9%,
-		var(--brand-3) 97.5%
+		var(--card) 97.5%
 	);
 }
 

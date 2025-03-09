@@ -1,12 +1,11 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import React, { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
-import CanvasLoader from "../Loader";
+import CanvasLoader from '../Loader';
 
 const Coin = () => {
-	// const earth = useGLTF("/models/coin.glb");
-	const coin = useGLTF("/models/coin.glb");
+	const coin = useGLTF('/models/coin.glb');
 
 	return (
 		<primitive
@@ -38,6 +37,7 @@ const CoinCanvas = () => {
 				<OrbitControls
 					autoRotate
 					enableZoom={false}
+					enablePan={false}
 					maxPolarAngle={Math.PI / 2}
 					minPolarAngle={Math.PI / 2}
 				/>
@@ -67,5 +67,4 @@ const CoinCanvas = () => {
 
 export default CoinCanvas;
 
-useGLTF.preload("/models/coin.glb");
-// useGLTF.preload("/models/coin.glb");
+useGLTF.preload('/models/coin.glb');
