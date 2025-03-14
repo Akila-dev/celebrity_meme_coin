@@ -5,7 +5,7 @@ import { slideIn, textVariant } from '../../utils/motion';
 import { VscArrowSwap } from 'react-icons/vsc';
 import { FaWallet } from 'react-icons/fa6';
 
-import { howToGetGLOW } from '../../constants';
+import { accountData } from '../../constants';
 import { images } from '../../assets';
 import { InputBox, Logo } from '../../components';
 
@@ -44,22 +44,27 @@ const MyAccount = () => {
 				{/* MY ACCOUNT */}
 				<div className="space-y-[2em] pb-[2em] border-b border-card/50">
 					<div className="flex-y-center flex-col md:flex-row">
-						<p className="text-[1.5em]">How To Get $GLOW</p>
+						<p className="text-[1.5em]">My Account</p>
 						<button className="button">
 							<FaWallet />
-							Check $GLOW on Pump.fun
+							Connect Wallet
 						</button>
 					</div>
 
-					<div className="flex no-wrap gap-[1em] overflow-auto no-scrollbar">
-						<div className="card-bg-glass rounded-[1em] p-[1em] flex flex-col gap-[0.5em] w-full">
-							{howToGetGLOW.map((text, i) => (
-								<p key={i} className="font-light">
-									<b className="font-semibold text-gradient">Step {i + 1}:</b>{' '}
-									{text}
-								</p>
-							))}
-						</div>
+					<div className="flex no-wrap gap-[1em] text-center overflow-auto no-scrollbar">
+						{accountData.map(({ label, value }, i) => (
+							<div
+								key={i}
+								className="card-bg-glass rounded-[1em] card-padding flex justify-evenly items-center flex-col gap-[0.5em] min-w-[11em] w-fit"
+							>
+								<h1 className={`text-gradient text-[2em] font-semibold`}>
+									{value}
+								</h1>
+								<h3 className={`text-[0.7em] font-medium uppercase`}>
+									{label}
+								</h3>
+							</div>
+						))}
 					</div>
 				</div>
 

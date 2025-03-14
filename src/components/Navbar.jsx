@@ -69,13 +69,9 @@ const Navbar = ({ activeProp }) => {
 				</ul>
 
 				<div className="hidden lg:block">
-					<a
-						href="https://app.uniswap.org/swap"
-						target="_blank"
-						className="button"
-					>
+					<a href="#dashboard" className="button">
 						<FaWallet />
-						Connect Wallet
+						Get $GLOW
 					</a>
 				</div>
 
@@ -121,13 +117,9 @@ const Navbar = ({ activeProp }) => {
 								</li>
 							))}
 						</ul>
-						<a
-							href="https://app.uniswap.org/swap"
-							target="_blank"
-							className="button"
-						>
+						<a href="#dashboard" className="button">
 							<FaWallet />
-							Connect Wallet
+							Get $GLOW
 						</a>
 					</div>
 				</div>

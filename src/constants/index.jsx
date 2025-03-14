@@ -74,6 +74,14 @@ export const accountData = [
 	},
 ];
 
+export const howToGetGLOW = [
+	'Create an account on the on Pump.fun',
+	'Fill out the form below to purchase the required ammount of SOL',
+	"Click on the 'Buy' button to purchase the required ammount of SOL. You will be redirected to SimpleSwap where you can complete the transaction.",
+	'The required ammount of SOL will be added to your Pump.fun wallet.',
+	'You can then swap your sol for GLOW tokens on the Pump.fun platform.',
+];
+
 export const tokenomics = [
 	{
 		title: 'Supply',
@@ -82,12 +90,12 @@ export const tokenomics = [
 	},
 	{
 		title: 'Contract',
-		value: '0x569YT04Y788d4d6C294A2ghBT4567F7627c0Be88',
+		value: 'tiKGR3g3RPuetcAaGJwMDhhYbY85TABCedKnugypump',
 		icon: mobile,
 	},
 	{
 		title: 'Symbol',
-		value: '$CELMC',
+		value: '$GLOW',
 		icon: backend,
 	},
 ];

@@ -22,7 +22,7 @@ const Faq = () => {
 				</h2>
 			</motion.div>
 			<div
-				className={`xl:mt-0 flex lg:flex-row flex-col-reverse lg:items-center gap-[1em] md:gap-[2em] lg:gap-[3em] overflow-hidden`}
+				className={`xl:mt-0 flex lg:flex-row flex-col-reverse lg:items-center gap-[1em] md:gap-[2em] lg:gap-[3em]`}
 			>
 				<motion.div
 					variants={slideIn('left', 'tween', 0.2, 1)}

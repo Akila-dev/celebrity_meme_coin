@@ -78,7 +78,7 @@ const About = () => {
 					Tokenomics
 				</motion.p>
 				<motion.h2 className={`${styles.sectionHeadText} text-center`}>
-					Get $CELMC
+					Get $GLOW
 				</motion.h2>
 			</motion.div>
 

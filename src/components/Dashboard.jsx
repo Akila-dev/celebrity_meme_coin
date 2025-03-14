@@ -15,7 +15,7 @@ const Dashboard = () => {
 					Dashboard
 				</motion.p>
 				<motion.h2 className={`${styles.sectionHeadText} text-center`}>
-					Your $CELMC
+					Your $GLOW
 				</motion.h2>
 			</motion.div>
 
@@ -26,4 +26,4 @@ const Dashboard = () => {
 	);
 };
 
-export default SectionWrapper(Dashboard, '');
+export default SectionWrapper(Dashboard, 'dashboard');
