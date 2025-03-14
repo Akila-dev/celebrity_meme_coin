@@ -11,7 +11,7 @@ const StarWrapper = (Component, idName) =>
 				initial="hidden"
 				whileInView="show"
 				viewport={{ once: true, amount: 0.15 }}
-				className={`${styles.padding} relative z-0 overflow-clip`}
+				className={`${styles.padding} relative z-0 overflow-x-clip`}
 			>
 				<span className="hash-span" id={idName}>
 					&nbsp;

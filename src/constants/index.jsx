@@ -84,8 +84,8 @@ export const howToGetGLOW = [
 
 export const tokenomics = [
 	{
-		title: 'Supply',
-		value: '21.000.000',
+		title: 'Market Cap',
+		value: '$3,439',
 		icon: web,
 	},
 	{
