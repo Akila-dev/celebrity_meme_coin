@@ -4,6 +4,7 @@ import { slideIn, textVariant } from '../../utils/motion';
 
 import { VscArrowSwap } from 'react-icons/vsc';
 import { FaWallet } from 'react-icons/fa6';
+import { FiCopy } from 'react-icons/fi';
 
 import { howToGetGLOW } from '../../constants';
 import { images } from '../../assets';
