@@ -27,7 +27,7 @@ const phantomLinks = [
   },
 ];
 
-const Dashboard = () => {
+const HowToBuy = () => {
   return (
     <div className={`space-y-[2em]`}>
       <motion.div
@@ -52,7 +52,12 @@ const Dashboard = () => {
       <div className="card-bg-glass rounded-[1em]">
         <Accordion data={HOW_TO_GET_GLOW} />
       </div>
-      <div className="p-[1em] flex-center flex-col w-full bg-gradient-to-b from-[#ab9ff3] to-[#7a55f7] rounded-[1em] min-h-[15em] relative !gap-[0.5em] lg:!gap-[0.3em]">
+
+      {/* PHANTOM CTA */}
+      <motion.div
+        variants={slideIn("down", "tween", 0.2, 1)}
+        className="p-[1em] flex-center flex-col w-full bg-gradient-to-b from-[#ab9ff3] to-[#7a55f7] rounded-[1em] min-h-[15em] relative !gap-[0.5em] lg:!gap-[0.3em]"
+      >
         <img
           src={images.phantom}
           alt="Phantom Wallet"
@@ -73,9 +78,9 @@ const Dashboard = () => {
             </a>
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
 
-export default SectionWrapper(Dashboard, "dashboard");
+export default SectionWrapper(HowToBuy, "dashboard");
