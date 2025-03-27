@@ -126,6 +126,10 @@ input,
   @apply md:text-[1.1em] !font-semibold;
 }
 
+.phantom-link-icon {
+  @apply size-[70%] text-[#7a55f7];
+}
+
 .card-gradient {
   background: var(--accent);
   background: linear-gradient(90.13deg, var(--brand) 1.9%, var(--card) 97.5%);

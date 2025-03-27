@@ -1,5 +1,6 @@
-import CoinCanvas from './Coin';
+import CoinCanvas from "./Coin";
+import Coin2Canvas from "./Coin2";
 
-import StarsCanvas from './Stars';
+import StarsCanvas from "./Stars";
 
-export { CoinCanvas, StarsCanvas };
+export { CoinCanvas, Coin2Canvas, StarsCanvas };

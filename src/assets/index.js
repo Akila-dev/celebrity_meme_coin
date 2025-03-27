@@ -1,5 +1,6 @@
 import logo from "./logo.png";
 import backend from "./backend.png";
+import phantom from "./phantom.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
@@ -8,9 +9,10 @@ import close from "./close.svg";
 
 import sol from "./dummy_img/sol.jpeg";
 
-export { logo, backend, mobile, web, github, menu, close, sol };
+export { logo, backend, mobile, web, github, menu, close, sol, phantom };
 
 export const images = {
   logo,
   sol,
+  phantom,
 };
