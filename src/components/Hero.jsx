@@ -28,7 +28,7 @@ const Hero = () => {
         <motion.iframe
           width="420"
           height="315"
-          src="https://www.youtube.com/embed/zNy_UpYRKcY?autoplay=1&mute=1"
+          src="https://www.youtube.com/embed/IDJD65SNFuQ?autoplay=1&mute=1"
           className="w-full md:h-[80vh] md:max-h-[400px] lg:max-h-[80vh] rounded-[1em]"
           variants={fadeIn("up", "spring", 0, 1)}
         ></motion.iframe>

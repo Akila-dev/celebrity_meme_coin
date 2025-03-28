@@ -9,8 +9,8 @@ export const navLinks = [
     title: "Home",
   },
   {
-    id: "dashboard",
-    title: "Dashboard",
+    id: "how_to_buy",
+    title: "How To Buy",
   },
   {
     id: "tokenomics",

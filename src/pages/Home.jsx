@@ -39,19 +39,19 @@ const App = () => {
 
   return (
     <div className="relative z-0">
-      <div className="" ref={section1Ref}>
+      <div ref={section1Ref} className="relative z-0">
         <Navbar activeProp={activeNav} />
         <Hero />
       </div>
 
-      <div ref={section2Ref}>
+      <div ref={section2Ref} className="relative z-10">
         <HowToBuy />
       </div>
 
-      <div ref={section3Ref}>
+      <div ref={section3Ref} className="relative z-0">
         <Tokenomics />
       </div>
-      <div ref={section4Ref}>
+      <div ref={section4Ref} className="relative z-0">
         <Faq />
         <FaqCryptoGurus />
       </div>
